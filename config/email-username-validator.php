@@ -3,6 +3,8 @@
 return [
     // List of rule classes. Each class must implement
     // LittleSkin\LaravelEmailUsernameValidator\Contracts\EmailUsernameRule
+    // Predefined rules can be found under
+    // LittleSkin\LaravelEmailUsernameValidator\Rules namespace.
     'rules' => [
         // App\EmailUsernameRules\GmailRule::class,
         // App\EmailUsernameRules\OutlookRule::class,
