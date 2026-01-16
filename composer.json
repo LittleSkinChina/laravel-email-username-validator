@@ -1,0 +1,30 @@
+{
+    "name": "littleskinchina/laravel-email-username-validator",
+    "version": "1.0.0",
+    "type": "library",
+    "require": {
+        "illuminate/contracts": "^10|^11|^12",
+        "illuminate/support": "^10|^11|^12",
+        "illuminate/validation": "^10|^11|^12",
+        "php": ">=8.1"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "LittleSkin\\LaravelEmailUsernameValidator\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LittleSkin\\LaravelEmailUsernameValidator\\EmailUsernameValidatorServiceProvider"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "LittleSkin",
+            "homepage": "https://github.com/LittleSkinChina"
+        }
+    ]
+}
