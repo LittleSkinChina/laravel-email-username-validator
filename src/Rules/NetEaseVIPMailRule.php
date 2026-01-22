@@ -18,7 +18,7 @@ class NetEaseVIPMailRule implements EmailUsernameRule
     public function passes(string $username, string $domain, array $parameters = []): bool
     {
         // Length 5-20
-        // Starts with a letter, ends with a alphanumeric
+        // Starts with a letter, ends with an alphanumeric
         // Allowed chars: letters, digits, underscore
         return (bool) preg_match('/^(?=.{5,20}$)[A-Za-z][A-Za-z0-9_]*[A-Za-z0-9]$/', $username);
     }

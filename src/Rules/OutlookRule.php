@@ -25,7 +25,7 @@ class OutlookRule implements EmailUsernameRule
 
         // Outlook doesn't public their username rule, so we use general rules here.
         // - Length 4-32
-        // - Starts with a letter, ends with a alphanumeric
+        // - Starts with a letter, ends with an alphanumeric
         // - Allowed chars: letters, digits, dot, underscore, hyphen
         return (bool) preg_match('/^(?=.{4,32}$)[A-Za-z][A-Za-z0-9._-]*[A-Za-z0-9]$/', $real);
 

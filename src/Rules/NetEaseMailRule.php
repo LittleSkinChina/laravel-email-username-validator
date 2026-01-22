@@ -23,7 +23,7 @@ class NetEaseMailRule implements EmailUsernameRule
         }
 
         // Length 6-18 (See note below)
-        // Starts with a letter, ends with a alphanumeric
+        // Starts with a letter, ends with an alphanumeric
         // Allowed chars: letters, digits, underscore
         return (bool) preg_match('/^(?=.{6,18}$)[A-Za-z][A-Za-z0-9_]*[A-Za-z0-9]$/', $username);
         

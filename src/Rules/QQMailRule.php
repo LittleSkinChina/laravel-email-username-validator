@@ -24,7 +24,7 @@ class QQMailRule implements EmailUsernameRule
         }
 
         // - Length 3-20
-        // - Starts with a letter, ends with a alphanumeric
+        // - Starts with a letter, ends with an alphanumeric
         // - Allowed chars: letters, digits, dot, underscore, hyphen
         // - No consecutive dots, underscores, or hyphens
         return (bool) preg_match('/^(?=.{3,20}$)[A-Za-z](?!.*[._-]{2})[A-Za-z0-9._-]*[A-Za-z0-9]$/', $username);

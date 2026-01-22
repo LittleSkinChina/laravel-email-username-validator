@@ -29,7 +29,7 @@ class GmailRule implements EmailUsernameRule
         $real = str_replace('.', '', explode('+', $lower, 2)[0]);
 
         // Length 6-30
-        // Starts with a letter, ends with a alphanumeric
+        // Starts with a letter, ends with an alphanumeric
         // Allowed chars: letters, digits
         return (bool) preg_match('/^(?=.{6,30}$)[A-Za-z][A-Za-z0-9]*[A-Za-z0-9]$/', $real);
     }

@@ -19,7 +19,7 @@ class YahooMailRule implements EmailUsernameRule
     public function passes(string $username, string $domain, array $parameters = []): bool
     {
         // - Length 4-32
-        // - Starts with a letter, ends with a alphanumeric
+        // - Starts with a letter, ends with an alphanumeric
         // - Allowed chars: letters, digits, dot, underscore
         // - Maximum one dot allowed
         // - No consecutive dots, underscores, or dot-underscore combinations

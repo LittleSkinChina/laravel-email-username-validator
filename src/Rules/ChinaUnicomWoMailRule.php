@@ -21,7 +21,7 @@ class ChinaUnicomWoMailRule implements EmailUsernameRule
         }
 
         // Length 8-20
-        // Starts with a letter, ends with a alphanumeric
+        // Starts with a letter, ends with an alphanumeric
         // Allowed chars: letters, digits, dot, underscore, hyphen
         return (bool) preg_match('/^(?=.{8,20}$)[A-Za-z][A-Za-z0-9._-]*[A-Za-z0-9]$/', $username);
     }

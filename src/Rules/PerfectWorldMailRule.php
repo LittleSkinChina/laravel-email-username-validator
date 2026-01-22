@@ -4,7 +4,7 @@ namespace LittleSkin\LaravelEmailUsernameValidator\Rules;
 
 use LittleSkin\LaravelEmailUsernameValidator\Contracts\EmailUsernameRule;
 
-class PerfectWorldEmailRule implements EmailUsernameRule
+class PerfectWorldMailRule implements EmailUsernameRule
 {
     public static function domains(): array
     {

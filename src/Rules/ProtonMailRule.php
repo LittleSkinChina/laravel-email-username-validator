@@ -18,7 +18,7 @@ class ProtonMailRule implements EmailUsernameRule
     public function passes(string $username, string $domain, array $parameters = []): bool
     {
         // - Length 6-40
-        // - Starts and ends with a alphanumeric
+        // - Starts and ends with an alphanumeric
         // - Allowed chars: letters, digits, dot, underscore, hyphen
         // - No consecutive dots, underscores, hyphens, or dot-underscore / dot-hyphen / hyphen-underscore combinations
         return (bool) preg_match('/^(?=.{6,40}$)(?!.*[._-]{2})[A-Za-z0-9][A-Za-z0-9._-]*[A-Za-z0-9]$/', $username);
